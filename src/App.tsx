@@ -1,14 +1,17 @@
 import React from 'react'
 import './App.scss'
 
+import ContentTable from './components/ContentTable'
+import { PostsProvider } from './hooks/usePosts'
 const App: React.FC = () => {
-	const logoMoovin =
-		'https://cdn.moovin.com.br/project/manager-panel/img/logo-moovin.svg'
 
 	return (
-		<div className='App'>
-			<img alt='Logo da Moovin' src={logoMoovin} />
-		</div>
+		<PostsProvider>
+			<div className='App'>
+				<h1>Get List and Pagination!</h1>
+			</div>
+			<ContentTable titleTable="Latest Posts" title="Title" content="Content" />
+		</PostsProvider>
 	)
 }
 

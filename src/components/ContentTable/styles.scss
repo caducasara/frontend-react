@@ -1,0 +1,48 @@
+.contentTable {
+  background-color: #ffff;
+  width: 95%;
+  min-height: calc(100vh - 100px);
+  height: auto;
+  margin: 20px auto;
+  border-radius: 4px;
+  padding: 10px 10px;
+
+  header {
+    padding: 20px 0;
+
+     h2 {
+      color: #545454;
+     }
+  }
+
+  .table {
+    background-color: #F0EFEF;
+    width: 100%;
+    border-radius: 4px;
+    border-spacing: 0;
+    color: #545454;
+    padding: 10px 10px;
+
+    th {
+      text-align: left;
+      padding: 10px 20px;
+
+      & + th {
+        width: 65%;
+      }
+    }
+
+    td {
+      background-color: #ffff;
+      padding: 20px;
+      border-radius: 4px 0 0 4px;
+      text-align: left;
+      line-height: 16px;
+      border-bottom: 1px solid #F0EFEF;
+
+      & + td {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+}

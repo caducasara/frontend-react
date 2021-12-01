@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F0EFEF;
+  font-family: 'Roboto'
+}
+
+.App {
+  background-color: #0E1011;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 0;
+
+  h1 {
+    color: #fff;
+  }
+}
